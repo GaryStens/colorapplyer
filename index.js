@@ -1,7 +1,5 @@
 function applyColor(color, value) {
-    if (color == color) {
-        throw new Error('Cannot find color ' + color + '!')
-    } else if (color == 'reset') {
+    if (color == 'reset') {
         return '\x1b[0m' + value
     } else if (color == 'bright') {
         return '\x1b[1m' + value
